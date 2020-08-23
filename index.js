@@ -1,6 +1,6 @@
 const Discord = require("discord.js"); // Le dieu du soleil
 const fs = require('fs');
-const prefix = "s!"
+const prefix = "b!"
 
 
 var bot = new Discord.Client();

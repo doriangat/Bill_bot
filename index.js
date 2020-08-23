@@ -34,6 +34,14 @@ function loadCmds() {
 loadCmds();
 
 bot.on('message', message => { 
+   
+    if (message.author.bot) return; 
+
+    var msg = message.content.toUpperCase();
+    
+    if(msg.includes("CHORUS")) {
+        message.react('746041025147174973');
+    }
 
 var messageArray = message.content.split(/\s+/g);
 var args = messageArray.slice(1);

@@ -39,6 +39,10 @@ bot.on('message', message => {
 
     var msg = message.content.toUpperCase();
     
+    if(msg.includes(":CHORUS:")) {
+        return;
+    }
+    
     if(msg.includes("CHORUS")) {
         message.react('746041025147174973');
     }

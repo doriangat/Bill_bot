@@ -43,9 +43,7 @@ bot.on('message', message => {
         message.react('746041025147174973');
     }
     
-    if(msg.includes("CHOPPA")) {
-        message.react('746041025147174973');
-    }
+
 
 var messageArray = message.content.split(/\s+/g);
 var args = messageArray.slice(1);
